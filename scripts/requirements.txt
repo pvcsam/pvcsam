@@ -1,0 +1,4 @@
+# Runtime deps for the daily GitHub Actions refresh (heatmap only).
+# The portrait pipeline is local-only -- see requirements-art.txt.
+requests==2.32.3
+beautifulsoup4==4.12.3

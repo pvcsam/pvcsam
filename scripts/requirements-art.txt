@@ -1,0 +1,11 @@
+# Local-only deps for regenerating the ASCII portrait.
+# Run these by hand when the source photo changes -- CI never installs this file.
+pillow
+numpy
+
+# Optional. prep_photo.py detects them and falls back cleanly when absent:
+#   opencv-python  -> CLAHE local contrast (fallback: PIL autocontrast)
+#   rembg          -> background removal, needs Python >= 3.10
+#                     (fallback: the photo is used as-is)
+# opencv-python
+# rembg
